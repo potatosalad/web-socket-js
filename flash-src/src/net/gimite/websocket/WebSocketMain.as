@@ -92,9 +92,6 @@ public class WebSocketMain extends Sprite implements IWebSocketLogger{
       url:String, protocols:Array,
       proxyHost:String = null, proxyPort:int = 0,
       headers:String = null):void {
-    if (!manualPolicyFileLoaded) {
-      loadDefaultPolicyFile(url);
-    }
     var newSocket:WebSocket = new WebSocket(
         webSocketId, url, protocols, getOrigin(), proxyHost, proxyPort,
         getCookie(url), headers, this);
