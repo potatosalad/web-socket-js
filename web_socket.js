@@ -220,6 +220,8 @@
   WebSocket.CLOSING = 2;
   WebSocket.CLOSED = 3;
 
+  // Field to check implementation of WebSocket.
+  WebSocket.__isFlashImplementation = true;
   WebSocket.__initialized = false;
   WebSocket.__flash = null;
   WebSocket.__instances = {};
