@@ -14,7 +14,7 @@ public class WebSocketMainInsecure extends WebSocketMain {
     Security.allowInsecureDomain("*");
     super();
   }
-  
+
 }
 
 }
